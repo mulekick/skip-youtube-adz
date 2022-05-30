@@ -1,0 +1,2 @@
+# ignore lint config files
+.eslint*

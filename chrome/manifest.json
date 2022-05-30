@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Skip Youtube Ads",
+    "version": "1.0",
+    "description": "Autoclick the 'Skip Ad' button on youtube videos",
+    "icons": {
+        "16": "icons/skip-track-16.png",
+        "32": "icons/skip-track-32.png",
+        "48": "icons/skip-track-48.png",
+        "128": "icons/skip-track-128.png"
+    },
+    "content_scripts": [{
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["youtube-skip-ads.js"],
+        "run_at": "document_end"
+    }]
+}
