@@ -105,7 +105,7 @@ const
     skip = overlay => {
         try {
             // log
-            console.log(`${ EXTENSION_NAME }: ad is beginning.`);
+            console.log(`${ EXTENSION_NAME }: video ad is beginning.`);
             // retrieve ad type
             const ad = overlay.childNodes.item(2);
             // if ad is skippable
@@ -115,21 +115,21 @@ const
                     // fire click event
                     .click();
                 // log
-                console.log(`${ EXTENSION_NAME }: ad skipped.`);
+                console.log(`${ EXTENSION_NAME }: video ad skipped.`);
             // if not
             } else
                 // throw a generic error
                 throw new Error();
         } catch (err) {
             // log
-            console.log(`${ EXTENSION_NAME }: ad is not skippable.`);
+            console.log(`${ EXTENSION_NAME }: video ad is not skippable.`);
         }
     },
     // close overlayed ad
     close = overlay => {
         try {
             // log
-            console.log(`${ EXTENSION_NAME }: ad is showing.`);
+            console.log(`${ EXTENSION_NAME }: overlayed ad is showing.`);
             // retrieve close button
             const cl = overlay.firstChild.firstChild.childNodes.item(1).firstChild;
             // if ad is closeable
@@ -138,14 +138,14 @@ const
                     // fire click event
                     .click();
                 // log
-                console.log(`${ EXTENSION_NAME }: ad closed.`);
+                console.log(`${ EXTENSION_NAME }: overlayed ad closed.`);
             // if not
             } else
                 // throw a generic error
                 throw new Error();
         } catch (err) {
             // log
-            console.log(`${ EXTENSION_NAME }: could not close ad.`);
+            console.log(`${ EXTENSION_NAME }: could not close overlayed ad.`);
         }
     };
 
