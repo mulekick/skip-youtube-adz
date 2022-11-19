@@ -2,9 +2,9 @@
 
 This extension does two things, and nothing more :
 
-1. automatically removes "skippable" video ads (those who display "5..4..3..2..1..Skip Ad"), <span style="color:red">without waiting for the 5 seconds timeout</span>.
+✅ automatically removes "skippable" video ads (those who display "5..4..3..2..1..Skip Ad"), **without waiting for the 5 seconds timeout**.
 
-2. automatically removes "overlayed" ads (those who display at the bottom of the video).
+✅ automatically removes "overlayed" ads (those who display at the bottom of the video).
 
 Unfortunately, I've yet to find a way to remove the "unskippable" video ads (those who display **"Video will play after ad"**) so you'll have to bear with those for the moment. I'll post a new major version of the extension if I manage to achieve it, but at least you're done with the "get up from the couch to skip a 3 minutes ad" annoyance when you're watching YT 🥳.
 
